@@ -1,6 +1,8 @@
 ---
 import Layout from '@layouts/Neovim.astro';
-import { projects } from "@cv";
+import { projects as rawProjects } from "@cv";
+import type { Project } from "@/cv";
+const projects = (rawProjects as unknown) as Project[];
 import { Icon } from 'astro-icon/components';
 ---
 

@@ -93,9 +93,10 @@ interface Project {
   name: string;
   isActive: boolean;
   description: string;
- highlights: Highlights;
-  github?: string; 
-  url?: string;   
+  highlights: Highlights;
+  github?: string;
+  url?: string;
+  stack?: Record<string, string>;
 }
 
 interface Interests {
@@ -108,4 +109,4 @@ interface Reference {
   reference: string;
 }
 
-type Highlights = Array<String>;
+type Highlights = string[];
