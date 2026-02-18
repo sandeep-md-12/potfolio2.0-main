@@ -94,8 +94,9 @@ interface Project {
   isActive: boolean;
   description: string;
   highlights: Highlights;
-  url?: URL;
-  github?: URL;
+  url?: string;
+  github?: string;
+  stack?: Record<string, string>;
 }
 
 interface Interests {
