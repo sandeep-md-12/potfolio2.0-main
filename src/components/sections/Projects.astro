@@ -59,9 +59,9 @@ const projects = (rawProjects as unknown) as Project[];
               <p data-ccursor="noPadding" class='relative z-10 py-3 text-sm text-skin-base'>
                 {description}
               </p>
-              <ul class='z-10 mt-1 text-sm'>
+              <ul class='z-10 mt-1 text-sm flex-grow'>
                 {highlights.map((highlight) => {
-                  return <li data-ccursor class="w-max">{highlight}</li>;
+                  return <li data-ccursor class="break-words">{highlight}</li>;
                 })}
               </ul>
               
